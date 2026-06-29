@@ -26,3 +26,25 @@
 .footer {
      margin-top: 50px;
 }
+/* リスト全体の行間を広げて見やすくする */
+.facility-list {
+    line-height: 2.2;
+}
+
+/* 数字の四角い枠のデザイン */
+.num-badge {
+    display: inline-block;
+    min-width: 26px;         /* 最低限の横幅（1桁の数字が綺麗に収まるサイズ） */
+    height: 26px;            /* 縦幅 */
+    line-height: 24px;       /* 文字の上下中央揃え用（枠線分を引いたサイズ） */
+    text-align: center;      /* 文字の左右中央揃え */
+    padding: 0 6px;          /* 「9,10,11」など文字数が多いときに横に広がるための隙間 */
+    box-sizing: border-box;  /* 枠線を含めたサイズ計算にする */
+    
+    /* 見た目の調整（色や角の丸み） */
+    border: 1px solid #333;   /* 線の太さ・種類・色（黒） */
+    background-color: #f4f4f4;/* 四角の中の背景色（薄いグレー） */
+    border-radius: 4px;       /* 四角の角を少し丸める */
+    font-weight: bold;        /* 数字を太字にする */
+    margin-right: 8px;        /* 数字と文字の間のすき間 */
+}
