@@ -40,6 +40,13 @@
     margin-left: 0;
 }
 
+.member-list img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
 @media (max-width: 800px) {
     .member-list {
         padding-left: 20px;
