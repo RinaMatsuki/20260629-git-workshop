@@ -41,11 +41,11 @@
 }
 
 .schedule-list img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
     display: block;
-    margin: 0 auto;
+    
 }
 @media (max-width: 800px) {
     .schedule-list {
