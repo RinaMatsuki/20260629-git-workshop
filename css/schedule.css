@@ -1,16 +1,16 @@
-.members {
+.schedule {
     background-color: #f8f8f8;
     padding-top: 45px;
     padding-bottom: 55px;
 }
 
-.members h2 {
+.schedule h2 {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 
-.members h2::after {
+.schedule h2::after {
     content: '';
     display: block;
     width: 36px;
@@ -21,7 +21,7 @@
     margin-right: auto;
 }
 
-.member-list {
+.schedule-list {
     display: flex;
     padding-top: 40px;
     padding-bottom: 10px;
@@ -30,23 +30,30 @@
     overflow: scroll;
 }
 
-.member-list li {
+.schedule-list li {
     flex-shrink: 0;
     width: 260px;
     margin-left: 75px;
 }
 
-.member-list li:first-child {
+.schedule-list li:first-child {
     margin-left: 0;
 }
 
+.schedule-list img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+    
+}
 @media (max-width: 800px) {
-    .member-list {
+    .schedule-list {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .member-list li {
+    .schedule-list li {
         width: 220px;
         margin-left: 30px;
     }
