@@ -33,7 +33,7 @@
 .schedule-list li {
     flex-shrink: 0;
     width: 260px;
-    margin-left: 75px;
+    margin-left: 40px;
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
@@ -53,16 +53,17 @@
     margin: 0 auto 15px;
 }
 
-.schedule-list dd,
-.schedule-list .speciality {
-    margin-top: 8px;
-    line-height: 1.6;
+.schedule-list dt {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 12px;
 }
 
 .event-list {
     text-align: left;
-    margin-top: 10px;
     padding-left: 20px;
+    line-height: 1.8;
 }
 
 .event-list li {
@@ -77,7 +78,15 @@
 
     .schedule-list li {
         width: 220px;
-        margin-left: 30px;
+        margin-left: 20px;
+    }
+
+    .schedule-list img {
+        width: 80px;
+    }
+
+    .schedule-list dt {
+        font-size: 20px;
     }
 }
 
