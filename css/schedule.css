@@ -34,6 +34,11 @@
     flex-shrink: 0;
     width: 260px;
     margin-left: 75px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .schedule-list li:first-child {
@@ -45,8 +50,25 @@
     aspect-ratio: 1 / 1;
     object-fit: contain;
     display: block;
-    
+    margin: 0 auto 15px;
 }
+
+.schedule-list dd,
+.schedule-list .speciality {
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+.event-list {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.event-list li {
+    margin-bottom: 6px;
+}
+
 @media (max-width: 800px) {
     .schedule-list {
         padding-left: 20px;
