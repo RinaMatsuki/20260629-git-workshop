@@ -54,21 +54,22 @@
 .schedule-list dt {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
 }
 
 .event-list {
+    list-style-type: disc;
+    text-align: left;
     padding-left: 20px;
-    line-height: 1.8;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .event-list li {
-    width: auto;
-    margin: 0 0 8px 0;
-    border: none;
-    padding: 0;
-    background: none;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
