@@ -8,6 +8,57 @@
 
 }
 
+/* ==========================================
+   アクセスマップ（左右横並び・均等配置）
+   ========================================== */
+
+/* 全体の横並び設定 */
+.access-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* 上のラインをピシッと揃えます */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 左右のボックスを50%ずつ均等にし、iframeを枠いっぱいに広げる */
+.access-box {
+    flex: 1;
+}
+
+.access-box iframe {
+    display: block;
+    width: 100%;
+    height: 450px; /* マップの高さを好みに合わせて調整（例: 450px） */
+    margin-top: 25px; /* マップの上の隙間 */
+}
+
+/* タイトル見出し（h2）の見た目を左右で統一する設定 */
+.access-box h2 {
+    margin: 0 0 10px 0; /* 下に少しだけすき間をあける */
+    font-size: 1.5em;   /* 文字の大きさ */
+}
+
+/* 住所テキスト（p）の設定 */
+.access-box p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   施設内マップ（下側のエリア）の設定
+   ========================================== */
+
+/* ★アクセスマップと施設内マップの間の「大きな改行（余白）」 */
+.campus-map-container {
+    margin-top: 80px;  /* ここで下のマップとの間をしっかりあけています */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 元々あった .map 関連の指定もここに綺麗にまとめておきます */
 .map {
     width: 930px;
     max-width: 90%;
@@ -22,7 +73,6 @@
     height: 600px;
     margin-top: 25px;
 }
-
 .footer {
      margin-top: 50px;
 }
@@ -48,31 +98,24 @@
     font-weight: bold;        /* 数字を太字にする */
     margin-right: 8px;        /* 数字と文字の間のすき間 */
 }
-.access-container {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
+
+/* ==========================================
+   施設内マップをセンターに寄せる設定
+   ========================================== */
+.feature-txt {
+    text-align: center;       /* これで中のタイトルや画像が真ん中に寄ります */
+    margin-top: 80px;         /* アクセスマップとの間の大きな改行（余白） */
 }
 
-/* 左右のマップを均等（50%ずつ）にして、枠いっぱいに広げる */
-.access-box {
-    flex: 1;
-}
-.access-box iframe {
-    width: 100%;
-}
-
-/* 右側の住所の上の余白を調整して、左のタイトルと高さを揃える */
-.visual-adjust p {
-    margin-top: 3.8em;
+.feature-txt img {
+    display: block;           /* 画像を正しく中央配置するための設定 */
+    margin: 20px auto;        /* 上下に20pxのすき間を作り、左右を自動で中央に */
+    max-width: 100%;          /* 画面からはみ出るのを防ぐ */
+    height: auto;
 }
 
-/* ★アクセスマップと施設内マップの間の「大きな改行（余白）」 */
-.campus-map-container {
-    margin-top: 80px;  /* ここで下のマップとの間を80pxあけています */
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+/* もし1〜16番の文字リストまで真ん中寄りになってしまったら、左揃えに戻す設定 */
+.facility-list {
+    text-align: left;
+    display: inline-block;    /* リスト自体は中央に置きつつ、文字は左揃えにします */
 }
