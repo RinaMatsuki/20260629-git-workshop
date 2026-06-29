@@ -23,23 +23,24 @@
 
 .schedule-list {
     display: flex;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
     overflow-x: auto;
-    margin: 40px;
-    padding: 30px;
-
-    border: 2px solid #000;
-    border-radius: 12px;
-    background-color: #fff;
+    gap: 30px;
 }
 
 .schedule-list li {
     flex-shrink: 0;
     width: 260px;
-    margin-left: 40px;
-}
+    padding: 20px;
 
-.schedule-list li:first-child {
-    margin-left: 0;
+    border: 2px solid #000;   
+    border-radius: 10px;     
+    background-color: #fff;
+
+    text-align: center;
 }
 
 .schedule-list img {
@@ -51,19 +52,23 @@
 }
 
 .schedule-list dt {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .event-list {
     padding-left: 20px;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .event-list li {
-    margin-bottom: 6px;
+    width: auto;
+    margin: 0 0 8px 0;
+    border: none;
+    padding: 0;
+    background: none;
 }
 
 @media (max-width: 800px) {
