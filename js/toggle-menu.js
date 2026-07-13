@@ -18,3 +18,15 @@ $(function () {
         500);
     });
 });
+
+window.addEventListener("scroll", function () {
+
+    const logo = document.querySelector(".footer-logo");
+
+    const logoTop = logo.getBoundingClientRect().top;
+
+    if (logoTop < window.innerHeight - 100) {
+        logo.classList.add("show");
+    }
+
+});
