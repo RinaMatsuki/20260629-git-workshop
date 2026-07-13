@@ -64,12 +64,14 @@
 }
 
 .event-list {
-    margin: 10px 0 0;
-    padding-left: 18px;
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
     
 }
 
 .event-list li {
+    padding-left: 0px;
     margin-bottom: 8px;
     white-space: normal;
     word-break: normal;
