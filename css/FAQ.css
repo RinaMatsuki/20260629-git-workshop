@@ -1,5 +1,5 @@
 /* FAQエリア全体のデザイン */
-.faq-section {
+.FAQ-section {
     /* 【写真の設定】imagesフォルダの中のFAQフォルダにある画像を指定 */
     background-image: url('../images/FAQ/kokuban2.png'); 
     background-size: cover;
@@ -10,14 +10,14 @@
 }
 
 /* タイトル（FAQ）のデザイン */
-.faq-section .title h1 {
+.FAQ-section .title h1 {
     color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 60px; /* タイトルと最初の質問の間の空間 */
 }
 
 /* 質問と回答のグループ（塊）ごとの空間 */
-.faq-group {
+.FAQ-group {
     max-width: 800px;
     margin: 0 auto 50px auto; /* 【重要】塊と塊の間の空間（50px） */
     padding: 20px;
@@ -25,12 +25,12 @@
     border-radius: 8px;
 }
 
-.faq-group:last-child {
+.FAQ-group:last-child {
     margin-bottom: 0; /* 一番最後の塊の下には余白をつけない */
 }
 
 /* 条件：質問（Q）を白にする */
-.faq-group h2 {
+.FAQ-group h2 {
     color: #ffffff;
     font-size: 1.4rem;
     margin-top: 0;
@@ -39,7 +39,7 @@
 }
 
 /* 条件：答え（A）を赤にする */
-.faq-group p {
+.FAQ-group p {
     color: #ff4d4d; /* パッと見やすい鮮やかな赤 */
     font-size: 1.15rem;
     margin: 0;
