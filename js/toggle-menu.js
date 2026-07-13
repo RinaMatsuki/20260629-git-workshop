@@ -19,16 +19,20 @@ $(function () {
     });
 });
 
-const logo = document.querySelector(".footer-logo");
+window.addEventListener("load", function () {
 
-const observer = new IntersectionObserver(function(entries) {
+    const logo = document.querySelector(".footer-logo");
 
-    if (entries[0].isIntersecting) {
-        logo.classList.add("show");
-    }
+    const observer = new IntersectionObserver(function(entries){
 
-}, {
-    threshold: 0.3
+        if(entries[0].isIntersecting){
+            logo.classList.add("show");
+        }
+
+    }, {
+        threshold: 0.3
+    });
+
+    observer.observe(logo);
+
 });
-
-observer.observe(logo);
