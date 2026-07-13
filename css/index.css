@@ -54,13 +54,25 @@ nav.floating a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 56px;
     line-height: 72px;
-
     
+    background: linear-gradient(
+        90deg,
+        #ff4d4d,
+        #ff9800,
+        #ffee58,
+        #4caf50,
+        #42a5f5,
+        #ab47bc
+    };
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .first-view-text p {
     font-size: 18px;
     margin-top: 20px;
+    color: #222;
 }
 
 .lead {
