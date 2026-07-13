@@ -2,7 +2,7 @@
 
 nav.floating {
     position: fixed;
-    right: 30px;
+    left: 30px;
     bottom: 30px;
     z-index: 100;
 }
@@ -46,7 +46,6 @@ nav.floating a:hover {
     margin-right: auto;
     padding-left: 40px;
     padding-bottom: 80px;
-    color: #000000;
     font-weight: bold;
     text-shadow: 1px 1px 10px #4b2c14;
 }
@@ -55,6 +54,8 @@ nav.floating a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 56px;
     line-height: 72px;
+
+    
 }
 
 .first-view-text p {
