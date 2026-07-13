@@ -63,7 +63,7 @@ nav.floating a:hover {
         #4caf50,
         #42a5f5,
         #ab47bc
-    };
+    );
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
