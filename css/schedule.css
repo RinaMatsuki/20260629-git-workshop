@@ -39,11 +39,8 @@
     border: 2px solid #000;   
     border-radius: 10px;     
     background-color: #fff;
-
     text-align: center;
-
     overflow-wrap: break-word;
-    word-break: break-word;
     box-sizing: border-box;
 }
 
@@ -64,23 +61,30 @@
 }
 
 .event-list {
-    list-style-type: disc;
-    list-style-position: outside;
-    padding-left: 20px;
-    
+    list-style: none;
+    padding-left: 0;
 }
 
 .event-list li {
-    padding-left: 0px;
-    margin-bottom: 8px;
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 0;
+    line-height: 1.4;   /* お好みで1.2～1.5程度 */
+    text-align: left;
     white-space: normal;
     word-break: normal;
     overflow-wrap: break-word;
 }
 
+.event-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+
 .schedule-list dt,
 .event-list li {
-    word-break: break-word;
+    word-break: normal;
 }
 
 @media (max-width: 800px) {
@@ -88,9 +92,9 @@
         padding: 20px;
         gap: 20px;
     }
-
-    .schedule-list li {
-        width: min(220px, 80px);
+    
+    .schedule-list > li {
+        width: 220px;
         padding: 15px;
     }
 
@@ -106,5 +110,10 @@
     .event-list {
         font-size: 14px;
     }
+
+    .event-list li {
+        font-size: 14px;
+    }
 }
+
 
