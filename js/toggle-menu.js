@@ -19,14 +19,16 @@ $(function () {
     });
 });
 
-window.addEventListener("scroll", function () {
+const logo = document.querySelector(".footer-logo");
 
-    const logo = document.querySelector(".footer-logo");
+const observer = new IntersectionObserver(function(entries) {
 
-    const logoTop = logo.getBoundingClientRect().top;
-
-    if (logoTop < window.innerHeight - 100) {
+    if (entries[0].isIntersecting) {
         logo.classList.add("show");
     }
 
+}, {
+    threshold: 0.3
 });
+
+observer.observe(logo);
