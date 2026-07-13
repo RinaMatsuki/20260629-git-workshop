@@ -159,7 +159,7 @@ img {
 
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.8s ease;
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .footer-logo.show {
