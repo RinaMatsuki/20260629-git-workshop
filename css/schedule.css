@@ -64,16 +64,16 @@
 }
 
 .event-list {
-    margin-top: 10px;
-    padding-left: 20px;
-    box-sizing: border-box;
+    margin: 10px 0 0;
+    padding-left: 18px;
+    
 }
 
 .event-list li {
-    white-space: normal;   
-    overflow-wrap: anywhere;  
-    word-break: break-word;
     margin-bottom: 8px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 .schedule-list dt,
