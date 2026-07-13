@@ -1,0 +1,79 @@
+/* FAQページのスタイル */
+
+/* 
+   条件：
+   1. FAQの裏全体に写真があること (images/FAQ/kokuban2.png を背景として使用する場合の例)
+   2. 質問(Q)を白にすること
+   3. 答え(A)を赤にすること
+*/
+
+.faq-page {
+    /* 背景画像の設定：全体に広がるように指定 */
+    background-image: url('../images/FAQ/kokuban2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* スクロール時に背景を固定する場合 */
+    padding: 60px 20px;
+    min-height: 80vh;
+}
+
+/* タイトルのスタイル */
+.faq-page .title h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Dela Gothic One', sans-serif;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* HTMLのimgタグで出していた画像は背景にするため、非表示にするか調整します */
+.faq-page .title img {
+    display: none; 
+}
+
+/* FAQ全体のコンテナ（読みやすくするために少し暗めの背景を重ねるのがおすすめです） */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* 背景画像の上に半透明の黒を重ねて文字を読みやすくする */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 各質問と回答のグループ */
+.faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* 条件2: 質問を白にする */
+.faq-item h2 {
+    color: #ffffff; /* 白 */
+    font-size: 1.25rem;
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* 条件3: 答えを赤にする */
+.faq-item p {
+    color: #ff4d4d; /* 見やすい少し明るめの赤 */
+    font-size: 1.1rem;
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
