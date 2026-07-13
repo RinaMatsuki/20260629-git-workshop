@@ -230,8 +230,12 @@ img {
 
 .footer-logo {
     display: block;
-    width: 235px;
+    width: 260px;
     margin-top: 90px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .copyright {
