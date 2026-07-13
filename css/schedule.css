@@ -41,6 +41,10 @@
     background-color: #fff;
 
     text-align: center;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
 }
 
 .schedule-list img {
@@ -68,27 +72,39 @@
 }
 
 .event-list li {
-    text-align: left;
     margin-bottom: 8px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    
+}
+
+.schedule-list dt,
+.event-list li {
+    word-break: break-word;
 }
 
 @media (max-width: 800px) {
     .schedule-list {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
+        gap: 20px;
     }
 
     .schedule-list li {
-        width: 220px;
-        margin-left: 20px;
+        width: min(220px, 80px);
+        padding: 15px;
     }
 
     .schedule-list img {
         width: 80px;
+        height: 80px;
     }
 
     .schedule-list dt {
         font-size: 20px;
+    }
+
+    .event-list {
+        font-size: 14px;
     }
 }
 
