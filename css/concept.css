@@ -116,5 +116,7 @@
 
 .feature img {
     width: 380px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 15px;
 }
