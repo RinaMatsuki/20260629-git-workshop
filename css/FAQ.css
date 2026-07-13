@@ -77,3 +77,81 @@
     line-height: 1.6;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
+.faq-section {
+    /* 背景に画像を指定する */
+    background-image: url('FAQ/kokuban2.png'); 
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    padding: 60px 20px;          /* FAQエリア全体の上下の余白を少し広げました */
+}
+
+/* タイトル（FAQ）の下に空間を作る */
+.title h1 {
+    color: #ffffff;
+    margin-bottom: 50px;         /* タイトルから最初の質問までの間隔 */
+    text-align: center;
+}
+
+/* 質問（Q）のスタイル */
+.faq-section h2 {
+    color: #ffffff;             /* 条件：質問を白にする */
+    font-size: 1.25rem;
+    margin-top: 40px;           /* 【重要】前の「答え」から、次の「質問」に行くまでの空間 */
+    margin-bottom: 15px;        /* 【重要】「質問」から、すぐ下の「答え」までの空間 */
+    line-height: 1.4;
+}
+
+/* 最初の質問だけは、上の空間（margin-top）が不要なのでリセットします */
+.faq-section h2:first-of-type {
+    margin-top: 0;
+}
+
+/* 答え（A）のスタイル */
+.faq-section p {
+    color: #ff4d4d;             /* 条件：答えを赤にする */
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.8;           /* 答えの文章が2行になったときの、行と行の間の空間 */
+}
+/* 親となる全体の枠 */
+/* 親となる全体の枠 */
+.faq-section {
+    /* 背景に画像を指定する */
+    background-image: url('FAQ/kokuban2.png'); 
+    background-size: cover;      /* 画像を枠いっぱいに広げる */
+    background-position: center;  /* 画像の中心を中央に合わせる */
+    padding: 50px 20px;          /* 内側に少し余白を作る */
+}
+
+/* 質問の文字色を白にする */
+.faq-section h2 {
+    color: #ffffff;
+}
+
+/* 回答の文字色を赤にする */
+.faq-section p {
+    color: #ff4d4d;
+    margin-bottom: 30px; /* 次の質問との間隔 */
+}
+
+/* 文字が入っている要素を、画像より前に出す */
+.title, .main h2, .main p {
+    position: relative;
+    z-index: 2;        /* 文字を上に上げる */
+}
+
+/* 文字色の指定（条件通り） */
+.main h2 { color: #ffffff; }
+.main p { color: #ff4d4d; }
+
+/* 文字が入っている要素を、画像より前に出す */
+.title, .main h2, .main p {
+    position: relative;
+    z-index: 2;        /* 文字を上に上げる */
+}
+
+/* 文字色の指定（条件通り） */
+.main h2 { color: #ffffff; }
+.main p { color: #ff4d4d; }
